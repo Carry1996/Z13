@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>注册</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Toddler Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- stylesheet -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //stylesheet -->
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" type="text/css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<script type="text/javascript" src="js/check_register.js"></script>
+<style type="text/css">
+
+.contact_box {
+	width: 70%;
+
+	top: 50%;
+	/*设置负值，为要定位子盒子的一半高度*/
+}
+
+@media screen and (min-width:500px){
+	.contact_box {
+		left: 60%;
+		/*设置负值，为要定位子盒子的一半宽度*/
+		margin-left: 30%;
+	}
+}
+@media screen and (max-width: 1920px){
+	.contact_box {
+		left:75%;
+		width:50%;
+		/*设置负值，为要定位子盒子的一半宽度*/
+		margin-left: 37.5%;
+		padding:8em 0em 8em 0em;
+	}
+}
+@media screen and (max-width: 1440px){
+	.contact_box {
+		left:65%;
+		width:70%;
+		/*设置负值，为要定位子盒子的一半宽度*/
+		margin-left: 32.5%;
+	}
+}
+@media screen and (max-width: 1120px){
+	.contact_box {
+		left:50%;
+		width:80%;
+		/*设置负值，为要定位子盒子的一半宽度*/
+		margin-left: 25%;
+	}
+}
+@media screen and (max-width: 1080px){
+	.contact_box {
+		left:40%;
+		width:100%;
+		/*设置负值，为要定位子盒子的一半宽度*/
+		margin-left: 20%;
+	}
+}
+@media screen and (max-width: 960px){
+	.contact_box {
+		left:36%;
+		width:110%;
+		/*设置负值，为要定位子盒子的一半宽度*/
+		margin-left: 18%;
+	}
+}
+@media screen and (max-width: 900px){
+	.contact_box {
+		left:32%;
+		width:120%;
+		/*设置负值，为要定位子盒子的一半宽度*/
+		margin-left: 16%;
+	}
+}
+@media screen and (max-width: 800px){
+	.contact_box {
+		left:28%;
+		width:120%;
+		/*设置负值，为要定位子盒子的一半宽度*/
+		margin-left: 14%;
+	}
+}
+@media screen and (max-width: 768px){
+	.contact_box {
+		left:24%;
+		width:130%;
+		/*设置负值，为要定位子盒子的一半宽度*/
+		margin-left: 12%;
+	}
+}
+@media screen and (max-width: 736px){
+	.contact_box {
+		left:20%;
+		width:140%;
+		/*设置负值，为要定位子盒子的一半宽度*/
+		margin-left: 10%;
+	}
+}
+@media screen and (max-width: 667px){
+	.contact_box {
+		left:16%;
+		width:150%;
+		/*设置负值，为要定位子盒子的一半宽度*/
+		margin-left: 8%;
+	}
+}	
+@media screen and (max-width:640px){
+	.contact_box {
+		left:10%;
+		width:180%;
+		/*设置负值，为要定位子盒子的一半宽度*/
+		margin-left: 5%;
+	}
+}
+.form {
+	width: 100%;
+	max-width:400px;
+	height: 275px;
+	margin: 25px auto 0px auto;
+	padding-top: 25px;
+}	
+.login-content {
+	width: 50%;
+	background-color: rgba(255, 250, 2550, .6);
+	float: left;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+
+}		
+	
+	
+.input-group {
+	margin: 0px 0px 30px 0px !important;
+}
+.form-control,
+.input-group {
+	height: 35px;
+}
+
+.form-group input[type="button"]{
+	margin-bottom: 10px !important;
+}
+.form-group {
+	margin-bottom: 0px !important;
+}
+.login-title {
+	width:50%;
+	padding: 20px 10px;
+	background-color: rgba(0, 0, 0, .6);
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+.login-title h1 {
+	margin-top: 10px !important;
+}
+.login-title small {
+	color: #fff;
+}
+
+.link p {
+	line-height: 20px;
+	margin-top: 30px;
+}
+.download　{
+	background-color:#F00;
+	margin:auto;
+	float:right;
+}
+.btn-sm {
+	padding: 8px 24px !important;
+	font-size: 16px !important;
+}
+</style>
+<script language="javascript">
+	var xmlHttpRequest = null; //声明一个空的对象以接受XMLHttpRequest对象  
+
+	function isLegal(){	
+		document.getElementById("checkinput").innerHTML = "1__1";
+		if (window.ActiveXObject) { //IE的  
+			xmlHttpRequest = new ActionXObject("Microsoft.XMLHTTP");
+		} else if (window.XMLHttpRequest) { //除IE外的  
+			xmlHttpRequest = new XMLHttpRequest();
+		}
+		if (xmlHttpRequest != null) {
+			var uno = document.getElementById("uno").value;
+			var password1 = document.getElementById("password1").value;
+			var password2 = document.getElementById("password2").value;
+			var uname = document.getElementById("uname").value;
+			var sex = document.getElementById("sex").value;
+			var phone = document.getElementById("phone").value;
+			var email = document.getElementById("email").value;
+		//	text = xmlHttpRequest.responseText;
+			xmlHttpRequest.open("GET", "RegisterServlet?uno="
+					+ uno + "&password1=" + password1 + "&password2=" + password2 + 
+					"&uname=" + encodeURIComponent(uname) + "&sex=" + encodeURIComponent(sex) + "&phone=" + phone + "&email=" + email, true);
+			document.getElementById("checkinput").innerHTML = "______________________";
+			//关联好ajax的回调函数  
+			xmlHttpRequest.onreadystatechange = ajaxCall;
+
+			//真正向服务器发送请求  
+			xmlHttpRequest.send();
+		}
+	}
+	function ajaxCall() {
+		if (xmlHttpRequest.readyState == 4) { //完全得到服务器的响应  
+			if (xmlHttpRequest.status == 200) { //没有异常  
+				var text = xmlHttpRequest.responseText;
+				if (text) {
+					document.getElementById("checkinput").innerHTML = text;
+				} else {
+					document.getElementById("checkinput").innerHTML = "注册成功，返回登录界面";
+					window.location.href = "login.html?backurl="+ window.location.href;
+				}
+			}
+		}
+	}
+	</script>
+</head>
+
+
+<body>
+<div class="agileits_main1" style="height:inherit;">
+    <!-- header -->
+	<div class="container">
+		<div class="w3_agile_logo">
+			<h1><a href="index.html">WeShare</a></h1>
+		</div>
+		<div class="agileits_w3layouts_nav">
+			<div id="toggle_m_nav">
+				<div id="m_nav_menu" class="m_nav">
+					<div class="m_nav_ham w3_agileits_ham" id="m_ham_1"></div>
+					<div class="m_nav_ham" id="m_ham_2"></div>
+					<div class="m_nav_ham" id="m_ham_3"></div>
+				</div>
+			</div>
+			<div id="m_nav_container" class="m_nav wthree_bg">
+				<nav class="menu menu--sebastian">
+					<ul id="m_nav_list" class="m_nav menu__list">
+						<li class="m_nav_item menu__item menu__item--current" id="m_nav_item_1"> <a href="index.html" class="menu__link">Weshare 让您的大学不再淋湿</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+    
+</div>
+	<!--// header -->    
+<div class="contact_w3_agileits" id="contact">
+    
+    <div class="container  text-center contact_box">
+			<div class="login-title text-center">
+				<h1><small>注册</small></h1>
+			</div>
+			<div class="login-content ">
+			<div class="form">
+			<form>
+			
+				<div class="text-center" id="checkinput">&nbsp;</div>
+				
+				<div class="form-group">
+					<div class="col-xs-12  ">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon ">学号&nbsp;&nbsp;</span></span>
+							<input type="text" id="uno" name="uno" class="form-control" placeholder="学号" onchange="checkuno();">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-12  ">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon ">密码&nbsp;&nbsp;</span></span>
+							<input type="password" id="password1" name="password1" class="form-control" placeholder="密码" onchange="checkpassword1();">
+						</div>
+					</div>
+				</div>
+                <div class="form-group">
+					<div class="col-xs-12  ">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon ">确认密码</span></span>
+							<input type="password" id="password2" name="password2" class="form-control" placeholder="确认密码" onchange="checkpassword2();">
+						</div>
+					</div>
+				</div>
+                <div class="form-group">
+					<div class="col-xs-12  ">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon ">姓名&nbsp;&nbsp;</span></span>
+							<input type="text" id="uname" name="uname" class="form-control" placeholder="姓名" onchange="checkuname();">
+						</div>
+					</div>
+				</div>
+                <div class="form-group">
+					<div class="col-xs-12  ">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon ">性别&nbsp;&nbsp;&nbsp;<input type="radio" id="sex" name="sex"  value="男">男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="sex" name="sex"  value="女">女&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+							
+						</div>
+					</div>
+				</div>
+                <div class="form-group">
+					<div class="col-xs-12  ">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon ">手机号&nbsp;</span></span>
+							<input type="text" id="phone" name="phone" class="form-control" placeholder="手机号">
+						</div>
+					</div>
+				</div>
+                <div class="form-group">
+					<div class="col-xs-12  ">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon ">邮箱&nbsp;&nbsp;</span></span>
+							<input type="email" id="email" name="email" class="form-control" placeholder="邮箱" onchange="checkemail();">
+						</div>
+					</div>
+				</div>
+				<div class="form-group form-actions">
+					<div class="col-xs-4 col-xs-offset-4 ">
+						<input type="button" class="btn btn-sm btn-info" value="注册" onclick="isLegal();">
+					</div>
+				</div>
+				
+			</form>
+			</div>
+		</div>
+	</div>
+   </div> 
+
+
+<!-- menu -->
+<script type="text/javascript" src="js/main.js"></script>
+<!-- //menu -->
+<!--footer -->
+<div class="footer_agileits_w3layouts" style="margin-bottom:0px">
+	<div class="container">
+		<div class="footer_w3 text-center">
+			<div class="footer_copyright">
+			 <p>© 2017 WeShare. All rights reserved | Design by WeShare</p>
+			</div> 
+		</div>	
+	</div>
+</div>
+
+<!-- //footer -->
+<!-- here starts scrolling icon -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+					var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+					};
+				*/
+										
+				$().UItoTop({ easingType: 'easeOutQuart' });
+									
+				});
+		</script>
+		
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<!-- /ends-smoth-scrolling -->
+	<!-- //here ends scrolling icon -->
+
+
+ </body>
+</html>
